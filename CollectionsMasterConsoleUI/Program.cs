@@ -84,7 +84,7 @@ namespace CollectionsMasterConsoleUI
             #endregion
         }
 
-        private static void ThreeKiller(int[] arrayName)
+        public static void ThreeKiller(int[] arrayName)
         {
             for (var i = 0; i < arrayName.Length; i++)
             {
@@ -96,7 +96,7 @@ namespace CollectionsMasterConsoleUI
             }
         }
 
-        private static void OddKiller(List<int> numberList)
+        public static void OddKiller(List<int> numberList)
         {
             for (int i = numberList.Count - 1; i >= 0; i--)
             {
@@ -108,7 +108,7 @@ namespace CollectionsMasterConsoleUI
             NumberPrinter(numberList);
         }
 
-        private static void NumberChecker(List<int> numberList, int searchNumber)
+        public static void NumberChecker(List<int> numberList, int searchNumber)
         {
             if (numberList.Contains(searchNumber))
             {
@@ -122,7 +122,7 @@ namespace CollectionsMasterConsoleUI
 
         }
 
-        private static void Populater(List<int> listName)
+        public static void Populater(List<int> listName)
         {
             Random num = new Random();
 
@@ -133,7 +133,7 @@ namespace CollectionsMasterConsoleUI
             }
         }
 
-        private static void Populater(int[] arrayName)
+        public static void Populater(int[] arrayName)
         {
             Random num = new Random();
 
@@ -145,7 +145,7 @@ namespace CollectionsMasterConsoleUI
 
         }        
 
-        private static void ReverseArray(int[] arrayName)
+        public static void ReverseArray(int[] arrayName)
         {
             Array.Reverse(arrayName);
             NumberPrinter(arrayName);
@@ -156,15 +156,16 @@ namespace CollectionsMasterConsoleUI
         /// </summary>
         /// <typeparam name="T"> Must conform to IEnumerable</typeparam>
         /// <param name="collection"></param>
-        private static void NumberPrinter<T>(T collection) where T : IEnumerable<int>
+        public static void NumberPrinter<T>(T collection) where T : IEnumerable<int>
         {
+            //STAY OUT  DO NOT MODIFY!!
             foreach (var item in collection)
             {
                 Console.WriteLine(item);
             }
         }
 
-        private static void NumberPrinter2(int[] arrayName)
+        public static void NumberPrinter2(int[] arrayName)
         {
             foreach (var item in arrayName)
             {
@@ -172,7 +173,7 @@ namespace CollectionsMasterConsoleUI
             }
         }
 
-        private static void NumberPrinter3(int[] arrayName)
+        public static void NumberPrinter3(int[] arrayName)
         {
             for (var i = 0; i < arrayName.Length; i++)
             {
@@ -180,7 +181,7 @@ namespace CollectionsMasterConsoleUI
             }
         }
 
-        private static void NumberPrinterList(List<int> listName)
+        public static void NumberPrinterList(List<int> listName)
         {
             foreach (var item in listName)
             {
